@@ -1,0 +1,124 @@
+* {
+	transition: all .1s ease-in;
+}
+body{
+background:#FBF988;
+	margin-top:50px;
+}
+
+/* Typography */
+a,
+input[type="submit"],
+input[type="button"],
+button{
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+input[type="submit"],
+input[type="button"],
+button,
+.ba-button{
+	display: inline-block;
+}
+input[type="submit"]:hover,
+input[type="button"]:hover,
+button:hover,
+.ba-button:hover{
+
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="number"],
+input[type="tel"],
+textarea,
+select {
+
+	-webkit-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	-moz-transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+	transition: color .3s ease-in, border-color .3s ease-in, background-color .3s ease-in, opacity .3s ease-in;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+textarea:focus,
+select:focus {
+
+}
+textarea {
+
+}
+
+/* Layout */
+.checkers, .ba-container {
+margin:0 auto;
+}
+
+.checkers {
+width:600px;
+height:600px;
+border:2px solid red;
+}
+
+.ba-container{
+width:660px;
+height:660px;
+border:30px solid white;
+}
+
+.row {
+float:left;
+width:100%;
+height:12.5%;
+}
+
+.checkers .row div {
+	float:left;
+	width:12.5%;
+	height:100%;
+}
+.checkers .row:nth-child(2n) div:nth-child(2n+1),
+.checkers .row:nth-child(2n+1) div:nth-child(2n) {
+	background:red;
+}
+
+.row:nth-child(1) :nth-child(2n):after,
+.row:nth-child(2) :nth-child(2n+1):after,
+.row:nth-child(3) :nth-child(2n):after,
+.row:nth-child(6) :nth-child(2n+1):after,
+.row:nth-child(7) :nth-child(2n):after,
+.row:nth-child(8) :nth-child(2n+1):after {
+	content:"";
+ 	float:left;
+	width: 90%;
+	height: 90%;
+	margin:5%;
+	border-radius:50%;
+}
+
+.row:nth-child(1) :nth-child(2n):after,
+.row:nth-child(2) :nth-child(2n+1):after,
+.row:nth-child(3) :nth-child(2n):after {
+	background:#ABAEAF;
+	box-shadow:0 2px 0 0 #931220;
+}
+
+.row:nth-child(6) :nth-child(2n+1):after,
+.row:nth-child(7) :nth-child(2n):after,
+.row:nth-child(8) :nth-child(2n+1):after {
+	background:#DADBDA;
+	box-shadow:0 2px 0 0 #646666;
+}
+
+.row div:hover:after {
+	transform:translate(0,-15px);
+}
+
+
+
+
